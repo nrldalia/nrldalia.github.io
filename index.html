@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Data analytics and digital operations portfolio by Nurul Dalia Zulkifli.">
+  <title>Nurul Dalia Zulkifli | Data Analytics &amp; Digital Operations</title>
+  <style>
+    :root {
+      --background: #f8faf7;
+      --ink: #182820;
+      --muted: #4d6055;
+      --accent: #175640;
+      --border: #d8e3da;
+      --tint: #e7efe8;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 1rem/1.6 system-ui, sans-serif;
+    }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    p { color: var(--muted); }
+    h1, h2, h3 { line-height: 1.15; margin: 0; }
+    h1 { font-size: clamp(2.7rem, 8vw, 5.5rem); letter-spacing: -.05em; }
+    h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); letter-spacing: -.035em; }
+    h3 { font-size: 1.35rem; }
+    .wrap { width: min(1100px, calc(100% - 2rem)); margin: auto; }
+    header, section { border-bottom: 1px solid var(--border); }
+    header .wrap, footer .wrap, nav, .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    header .wrap, footer .wrap {
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+    header a, .button { font-weight: 700; text-decoration: none; }
+    section { padding: 3rem 0; }
+    .hero { padding: clamp(3rem, 9vw, 7rem) 0; }
+    .intro { max-width: 58ch; font-size: 1.2rem; }
+    .label { color: var(--accent); font-size: .9rem; font-weight: 700; }
+    .button {
+      padding: .65rem 1rem;
+      border: 1px solid var(--accent);
+      border-radius: .4rem;
+    }
+    .primary { color: white; background: var(--accent); }
+    .featured, .cards, .experience {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .featured, .experience { grid-template-columns: 1fr 1fr; }
+    .featured { align-items: center; background: var(--tint); }
+    .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card, .featured, aside {
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: .6rem;
+    }
+    .card { background: white; }
+    figure { margin: 0; }
+    img { display: block; width: 100%; height: auto; border-radius: .3rem; }
+    figcaption { margin-top: .4rem; color: var(--muted); font-size: .9rem; }
+    .role { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+    .role p:last-child { margin-bottom: 0; }
+    aside { align-self: start; background: var(--tint); }
+    aside h3:not(:first-child) { margin-top: 1.4rem; }
+    footer { background: var(--tint); }
+    @media (max-width: 760px) {
+      .featured, .cards, .experience { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="#top">Nurul Dalia</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="label">Data Analytics &amp; Digital Operations</p>
+        <h1>Nurul Dalia Zulkifli</h1>
+        <p class="intro">
+          I build dashboards, improve data quality, and automate operational workflows.
+          My experience spans retail data operations and freight forwarding.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <a class="button" href="https://github.com/nrldalia/data-science-analytics-portfolio">GitHub portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2>Selected projects</h2>
+        <article class="featured">
+          <div>
+            <h3>FlowTrade Logistics</h3>
+            <p class="label">Power BI · DAX · Data modelling</p>
+            <p>A three-page report on delivery performance, recorded delays, and freight profitability across 600 synthetic shipments.</p>
+            <a href="https://github.com/nrldalia/data-science-analytics-portfolio/tree/main/03_visualisation/FlowTrade%20Logistic">View dashboard project</a>
+          </div>
+          <figure>
+            <img
+              src="https://raw.githubusercontent.com/nrldalia/data-science-analytics-portfolio/main/03_visualisation/FlowTrade%20Logistic/01_executive_overview.png"
+              alt="Power BI executive overview showing shipment, delivery, delay, revenue, and profit metrics"
+              width="1888" height="1064">
+            <figcaption>Executive overview using synthetic freight data</figcaption>
+          </figure>
+        </article>
+
+        <div class="cards">
+          <article class="card">
+            <h3>DataFlow Hub</h3>
+            <p class="label">Python · Flask · pandas · React</p>
+            <p>A local app for applying data cleaning rules, reviewing quality issues, and exporting processed files with an audit trail.</p>
+            <a href="https://github.com/nrldalia/data-science-analytics-portfolio/tree/main/data-flow-hub">View DataFlow Hub</a>
+          </article>
+          <article class="card">
+            <h3>Weather Analytics Pipeline</h3>
+            <p class="label">Python · pandas · Matplotlib</p>
+            <p>Analyses historical temperatures in Melbourne and turns published METMalaysia forecasts into charts, CSV summaries, and PDF reports.</p>
+            <a href="https://github.com/nrldalia/data-science-analytics-portfolio/tree/main/01_weather_pipeline">View weather workflows</a>
+          </article>
+          <article class="card">
+            <h3>Applied Machine Learning</h3>
+            <p class="label">Python · pandas · scikit-learn</p>
+            <p>Two notebooks explore linear regression for California housing values and K-means clustering for synthetic retail customer data.</p>
+            <a href="https://github.com/nrldalia/data-science-analytics-portfolio/tree/main/02_machine_learning">View notebooks</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <div class="experience">
+          <div>
+            <article class="role">
+              <h3>AI &amp; Digital Operations Executive</h3>
+              <p class="label">Central Continent Sdn Bhd · Oct 2026–present</p>
+              <p>Lead the phased rollout of an internal freight-forwarding platform covering bookings, documents, quotations, invoicing, and management reporting.</p>
+            </article>
+            <article class="role">
+              <h3>Data Operations Analyst</h3>
+              <p class="label">NielsenIQ Malaysia · Mar 2024–Mar 2026</p>
+              <p>Managed retail data operations across four Asian markets, investigated discrepancies, and automated bulk file extraction and validation with Python and Excel.</p>
+            </article>
+            <article class="role">
+              <h3>Practical Trainee</h3>
+              <p class="label">MDEC · Aug 2023–Jan 2024</p>
+              <p>Validated data in Excel and helped test dashboards against business requirements.</p>
+            </article>
+          </div>
+
+          <aside aria-label="Skills and qualifications">
+            <h3>Skills</h3>
+            <p>Python, SQL, Power BI, DAX, Excel, Power Query, data quality assurance, and workflow automation</p>
+            <h3>Education</h3>
+            <p>Bachelor of Applied Science in Data Analytics (Hons.), Universiti Malaysia Pahang · 2024</p>
+            <h3>Certifications</h3>
+            <p>PCEP, Tableau Desktop Specialist, and Altair RapidMiner Machine Learning and Data Engineering Professional certifications</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <p><strong>Contact</strong> · Selangor, Malaysia</p>
+      <nav aria-label="Contact links">
+        <a href="mailto:nurulzkf@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/nurul-dalia-zulkifli">LinkedIn</a>
+        <a href="https://github.com/nrldalia">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
